@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-heart">❤️</div>
+        <h2>Creating something special for you...</h2>
+    </div>
+
+
+    <!-- Floating Hearts -->
+    <div class="hearts"></div>
+
+
+    <!-- Main Website -->
+    <main id="website">
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="glass-card">
+
+                <h1>Hey My Love ❤️</h1>
+
+                <p class="subtitle">
+                    I made something special for you...
+                </p>
+
+                <button onclick="nextSection('sorry')">
+                    Open My Heart 💌
+                </button>
+
+            </div>
+        </section>
+
+
+
+        <!-- Sorry Section -->
+        <section id="sorry" class="hidden section">
+
+            <div class="glass-card">
+
+                <h2>Happy Belated Girlfriend's Day 🌸</h2>
+
+                <p>
+                    I'm sorry I couldn't make this day special on time.
+                    But I want you to know that you are special to me
+                    every single day, not just on one date.
+                </p>
+
+                <p>
+                    This little website is my way of showing you
+                    how much you mean to me. ❤️
+                </p>
+
+                <button onclick="nextSection('memories')">
+                    Continue ✨
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Memories Section -->
+        <section id="memories" class="hidden section">
+
+            <div class="glass-card">
+
+                <h2>Our Little Memories 📸</h2>
+
+                <div class="gallery">
+
+                    <div class="photo">
+                        Your Photo Here
+                    </div>
+
+                    <div class="photo">
+                        Your Photo Here
+                    </div>
+
+                    <div class="photo">
+                        Your Photo Here
+                    </div>
+
+                </div>
+
+                <button onclick="nextSection('love')">
+                    Next ❤️
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Love Section -->
+        <section id="love" class="hidden section">
+
+            <div class="glass-card">
+
+                <h2>Why You Are Special 💗</h2>
+
+                <p>
+                    You make my days brighter.
+                    Even with distance between us,
+                    you are still close to my heart.
+                </p>
+
+                <button onclick="nextSection('final')">
+                    One More Thing 💌
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Final Section -->
+        <section id="final" class="hidden section">
+
+            <div class="glass-card">
+
+                <h2>Will You Forgive Me? 🥺</h2>
+
+                <button id="yesBtn">
+                    YES ❤️
+                </button>
+
+                <button id="noBtn">
+                    NO 😭
+                </button>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+  </html>
