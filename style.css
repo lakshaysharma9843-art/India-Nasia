@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9ecf, #ff4f9a, #ffb6d9);
+    overflow-x: hidden;
+    color: white;
+}
+
+
+#loader {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, #ff4f9a, #ffb6d9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: 1s;
+}
+
+.loader-heart {
+    font-size: 70px;
+    animation: heartbeat 1s infinite;
+}
+
+#loader h2 {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+
+#website {
+    opacity: 0;
+    transition: 1s;
+}
+
+
+.hero,
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+
+.glass-card {
+    width: 90%;
+    max-width: 550px;
+    padding: 35px;
+    text-align: center;
+
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 30px;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+
+    animation: fadeUp 1s ease;
+}
+
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.subtitle {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+
+p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+button {
+    border: none;
+    outline: none;
+
+    padding: 14px 30px;
+    margin: 10px;
+
+    border-radius: 50px;
+
+    background: white;
+    color: #ff4f9a;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+    transform: scale(1.08);
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+
+.gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.photo {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.25);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+}
+
+
+
+@keyframes heartbeat {
+
+    50% {
+        transform: scale(1.2);
+    }
+
+}
+
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+      }
